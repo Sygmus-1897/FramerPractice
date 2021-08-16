@@ -6,7 +6,7 @@ function App() {
   return (
     <Switch>
       <Route path="/cardGallery" render={CardGallery} />
-      <Route path="/dumdum" render={DumDum} />
+      <Route exact path="/" render={DumDum} />
     </Switch>
   );
 }
