@@ -2,9 +2,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import style from './styles/Page.module.scss';
 
 const pageVariant = {
-    hiddenLeft: { x: "-50vw", opacity: 0, transition: { duration: 2 } },
-    hiddenRight: { x: "50vw", opacity: 0, transition: { duration: 2 } },
-    visible: { x: 0, transition: { duration: 2 }, opacity: 1 },
+    hiddenLeft: { x: "-50vw", transition: { duration: 2 } },
+    hiddenRight: { x: "50vw", transition: { duration: 2 } },
+    visible: { x: 0, transition: { duration: 2 } },
 }
 
 const Page = ({ activePage, setActivePage }) => {
